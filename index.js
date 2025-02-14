@@ -36,6 +36,6 @@ window.onload = function () {
     alert(instaRequest2);
 
     navigator.clipboard.writeText(hashtag);
-    window.location.href = "https://www.instagram.com";
+    window.location.href = "intent://instagram.com/stories";
   });
 };
