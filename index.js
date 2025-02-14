@@ -16,6 +16,9 @@ window.onload = function () {
     hashtag =
       "#BusanTourism #BusanVacation #BusanAttractions #GwangalliBeach #Gwangalli #GwangalliDate #LaserTagBusan #LaserTagGwangalli #BusanNightlife #BusanPlayground #ThingsToDoInBusan #BusanActivities #BusanRestaurants #GwangalliRestaurants #BusanFamilyTravel #GwangalliCafe #GwangalliTravel #VisitGwangalli #BusanBeach #TravelToBusan #KoreaTravel #SouthKoreaTravel #ExploreBusan #KoreanVacation #BusanHoliday";
   }
+
+
+  
   const naver = document.querySelector(".naver");
   const google = document.querySelector(".google");
   const insta = document.querySelector(".insta");
@@ -36,6 +39,12 @@ window.onload = function () {
     alert(instaRequest2);
 
     navigator.clipboard.writeText(hashtag);
-    window.location.href = "intent://instagram.com/stories";
+    if (/android/.test(navigator.userAgent.toLowerCase())) {
+      window.location.href =
+        "intent://#Intent;scheme=instagram;package=com.instagram.android;end";
+      return;
+    } else {
+      window.location.href = "instagram://camera";
+    }
   });
 };
