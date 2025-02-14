@@ -41,7 +41,7 @@ window.onload = function () {
     navigator.clipboard.writeText(hashtag);
     if (/android/.test(navigator.userAgent.toLowerCase())) {
       window.location.href =
-        "intent://#Intent;scheme=instagram;package=com.instagram.android;end";
+        "https://www.instagram.com/";
       return;
     } else {
       window.location.href = "instagram://camera";
