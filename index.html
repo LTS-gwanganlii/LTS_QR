@@ -1,50 +1,75 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>레이저 태그 스포츠</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <h1>🎯 레이저 태그 스포츠 리뷰 🏆</h1>
-        <p>📸 리뷰 작성 법: 사진 1장, 추천사 2줄 필수입니다!</p>
-        <p>🔔 리뷰 작성 후, 직원에게 꼭 보여주세요</p>
-        <p>🙏 감사합니다</p>
+      <h1>🎯 레이저 태그 스포츠 리뷰 🏆</h1>
+      <p>📸 리뷰 작성 법: 사진 1장, 추천사 2줄 필수입니다!</p>
+      <p>🔔 리뷰 작성 후, 직원에게 꼭 보여주세요</p>
+      <p>🙏 감사합니다</p>
     </header>
-    
 
     <main>
-        <div class="button-container">
-            <div class="review-button naver">
-                <a>
-                    <img src="./icons/naver.png" alt="네이버 리뷰 아이콘" class="emoji"> <!-- 네이버 리뷰 아이콘 -->
-                    <p>네이버 리뷰 (영수증 필요)</p>
-                </a>
-            </div>
-            <div class="review-button google">
-                <a>
-                    <img src="./icons/google.png" alt="구글 리뷰 아이콘" class="emoji"> <!-- 구글 리뷰 아이콘 -->
-                    <p>구글 리뷰</p>
-                </a>
-            </div>
-            <div class="review-button">
-                <a href="https://forms.gle/ZSibH9TWuPtqEXd19" target="_blank">
-                    <img src="./icons/prize.png" alt="시즌1 대회 아이콘" class="emoji"> <!-- 시즌1 대회 아이콘 -->
-                    <p>시즌1대회 참가</p>
-                </a>
-            </div>
-            <div class="review-button insta">
-                <a>
-                    <img src="./icons/instagram.png" alt="인스타그램 아이콘" class="emoji"> <!-- 인스타그램 아이콘 -->
-                    <p>인스타그램</p>
-                </a>
-            </div>
+      <div class="button-container">
+        <div class="review-button naver">
+          <a>
+            <img
+              src="./root/icons/naver.png"
+              alt="네이버 리뷰 아이콘"
+              class="emoji"
+            />
+            <p>네이버 리뷰 (영수증 필요)</p>
+          </a>
         </div>
-        
-        
+        <div class="review-button google">
+          <a>
+            <img
+              src="./root/icons/google.png"
+              alt="구글 리뷰 아이콘"
+              class="emoji"
+            />
+            <p>구글 리뷰</p>
+          </a>
+        </div>
+        <div class="review-button insta">
+          <a>
+            <img
+              src="./root/icons/instagram.png"
+              alt="인스타그램 아이콘"
+              class="emoji"
+            />
+            <p>인스타그램</p>
+          </a>
+        </div>
+      </div>
+
+      <div id="imageModal">
+        <div class="modal-content">
+          <h3>⭕ 좋아요</h3>
+          <div class="image-row">
+            <img src="root/icons/best1.jpg" alt="Best Example 1" />
+            <img src="root/icons/best2.jpg" alt="Best Example 2" />
+          </div>
+          <h3>❌ 지양해주세요</h3>
+          <div class="image-row">
+            <img src="root/icons/worst1.jpg" alt="Worst Example 1" />
+            <img src="root/icons/worst2.jpg" alt="Worst Example 2" />
+          </div>
+          <button
+            class="close-btn"
+            onclick="document.getElementById('imageModal').style.display='none'"
+          >
+            닫기
+          </button>
+        </div>
+      </div>
     </main>
-    <script src="./index.js"></script>
-</body>
+
+    <script src="index.js"></script>
+  </body>
 </html>
