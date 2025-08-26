@@ -29,7 +29,7 @@ window.onload = function () {
     setTimeout(() => {
       modal.style.display = "none";
       callback();
-    }, 3000);
+    }, 5000);
   }
 
   naver.addEventListener("click", () => {
