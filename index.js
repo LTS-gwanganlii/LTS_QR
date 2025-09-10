@@ -34,10 +34,11 @@ window.onload = function () {
 
   naver.addEventListener("click", () => {
     alert(request);
-    showExamplesAndRedirect(() => {
-      window.location.href =
-        "https://m.place.naver.com/place/1149712929/review/visitor?entry=pll&reviewSort=recent";
-    });
+    alert("준비중입니다");
+    // showExamplesAndRedirect(() => {
+    //   window.location.href =
+    //     "https://m.place.naver.com/place/1149712929/review/visitor?entry=pll&reviewSort=recent"; 링크틀림
+    // });
   });
 
   google.addEventListener("click", () => {
