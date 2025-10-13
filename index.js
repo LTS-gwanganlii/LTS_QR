@@ -21,6 +21,7 @@ window.onload = function () {
   const naver = document.querySelector(".naver");
   const google = document.querySelector(".google");
   const insta = document.querySelector(".insta");
+  const groupPhoto = document.querySelector(".group-photo");
 
   function showExamplesAndRedirect(callback) {
     const modal = document.getElementById("imageModal");
@@ -31,6 +32,13 @@ window.onload = function () {
       callback();
     }, 5000);
   }
+
+  groupPhoto.addEventListener("click", () => {
+    alert("마케팅 활용 동의서에 동의한 뒤 직원에게 말씀해주세요");
+    showExamplesAndRedirect(() => {
+      window.location.href = "https://forms.gle/7hk6jRPYzLG3M5Sx7"; 
+    });
+  });
 
   naver.addEventListener("click", () => {
     alert(request);
